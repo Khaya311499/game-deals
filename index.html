@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Deals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>🎮 Game Deals</h1>
+    <p class="subtitle" id="summary"></p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Filters">
+      <label class="search">
+        <span class="visually-hidden">Search titles</span>
+        <input type="search" id="search" placeholder="Search games…" autocomplete="off" />
+      </label>
+
+      <label class="toggle">
+        <input type="checkbox" id="onSaleOnly" />
+        <span>On sale only</span>
+      </label>
+
+      <label class="toggle">
+        <input type="checkbox" id="useLive" />
+        <span>Use live data (CheapShark)</span>
+      </label>
+    </section>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+
+    <ul id="deals" class="deals"></ul>
+  </main>
+
+  <script src="deals.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
